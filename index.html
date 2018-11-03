@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset = "utf-8">
+        <title>Blackjack JS</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    </head>
+    <body>  
+        <div class="dealer">
+            <img src="img/dealer.png" alt="Dealer image">
+            <div id="chat"></div>
+        </div>
+
+        <div class="mesa">
+            <section class="mt-3">  
+                <div class="carta" id="d1"></div>
+                <div class="carta" id="d2"></div>
+                <div class="carta" id="d3"></div>
+                <div class="carta" id="d4"></div>
+                <div class="carta" id="d5"></div>         
+            </section>  
+            
+            <section id="formulario">
+                <input id="btnInicio" class="btn" type="button" value="Iniciar Jogo">
+                <input id="btnVirar"  class="btn" type="button" value="Vez do Dealer" hidden>
+
+                <input id="btnHit"    class="btn btn-jogo verde" type="button" value="Hit" hidden>
+                <input id="btnHit2"   class="btn btn-jogo verde" type="button" value="Hit" hidden>
+
+                <input id="btnStand"  class="btn btn-jogo" type="button" value="Stand" hidden>
+                <input id="btnStand2" class="btn btn-jogo" type="button" value="Stand" hidden>
+            </section>
+
+            <section class="mb-3">
+                <div class="carta" id="p1"></div>
+                <div class="carta" id="p2"></div>
+                <div class="carta" id="p3"></div>
+                <div class="carta" id="p4"></div>
+                <div class="carta" id="p5"></div>
+            </section>
+
+            <div id="dealer" class="coin"><p>DEALER</p></div> 
+            <div id="player" class="coin"><p>PLAYER</p></div>  
+        </div>
+        
+        <div class="apostas">
+            <section>
+                <span class="label">Em jogo</span>
+                <span id="pote">0</span>
+            </section>
+            <section>
+                <span class="label">$</span>
+                <span id="dinheiro"></span>
+            </section>
+            <section class="text-center">
+                <select id="aposta" class="aposta">
+                    <option value="" selected disabled hidden>Aposta</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </section>
+            <p id="usuario"></p>
+        </div>
+
+        <footer>
+            <p>Todas as imagens foram retiradas do Google Imagens ||
+            Desenvolvido por <a href="https://github.com/felipemarchi" target="_blank" class="link-padrao">Felipe Marchi</a></p>
+        </footer>
+        
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="js/blackjack.js"></script>
+    </body>
+</html>
+    

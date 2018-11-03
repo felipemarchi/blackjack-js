@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Blackjack JS</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <style>
+        body {
+            background-image: url("img/background.jpg");
+            font-family: 'K2D', sans-serif;
+            text-transform: uppercase;
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+        }
+        div {
+            width: 100%;
+            text-align: center;
+            margin: 3rem auto 0;
+        }
+        img {
+            max-width: 25%;
+        }
+        a {
+            color: inherit;
+            text-decoration: inherit;
+            width: 100%;
+            text-align: center;
+            margin: 3rem auto 0;
+            text-transform: uppercase;
+            font-size: 2rem;
+            display: block;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Dinheiro insuficiente!</h1>
+        <img src="img/denied.png" alt="Access denied">
+        <a href="javascript:jogar()">Trocar de Usuário</a>
+    </div>
+
+    <script>
+        function jogar(){
+            window.location.replace('index.html')
+        }
+    </script>
+</body>
+</html>
+    
