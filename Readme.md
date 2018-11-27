@@ -1,4 +1,4 @@
-![Tela do Jogo](https://github.com/felipemarchi/backjack-js/blob/master/img/snapshot.png "Tela do Jogo")
+![Tela do Jogo](https://github.com/felipemarchi/blackjack-js/blob/master/img/snapshot.png "Tela do Jogo")
 
 **Pode ser implementado:**
 
